@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IM1_A1_WEB-BASED POETRY</title>
+  <link rel="stylesheet" href="A1_Style Sheet.css">
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+</style>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+  </style>
+  
+  
+    
+</head>
+<audio controls loop>
+  <source src="beautiful-random-minor-arp-119378.wav" type="audio/mpeg">
+</audio>
+<body>
+<img src="cursor.png" class="cursor">
+<script>
+  document.addEventListener('mousemove',(event) =>{
+    let cursor = document.querySelector('.cursor');
+    cursor.style.left = (event.pageX) -10 + 'px';
+    cursor.style.top = (event.pageY) -10 + 'px';
+  });
+</script>
+  
+
+  <!--cover-->
+  <div class="cover_container">
+    <div class="frame_cover">
+      <div id="title">THE ANGEL</div>
+      <div id="poet">by William Blake</div>
+      <img src="Full_Frame.png" id="Full_Frame">
+      <img src="hand.png" id="hand">
+      <img src="angel.png" id="angel">
+      <img src="angel_wings.png" id="angel_wings">
+      <img src="cover_flowers.png" id="cover_flowers">
+      <img src="cover_flowers.png" id="cover_flowers_1">
+    </div>
+  </div>
+    
+  <!--stanza 1 -->
+    <div class="s1_container">
+       <div class="frame_s1">
+        <img src="s1_background_cloud.png" id="s1_background_cloud">
+        <div id="stanza_1"> I dreamt a dream!  What can it mean? 
+          <br> And that I was a <span class="font2">maiden Queen</span>
+          <br> Guarded by <span class="font2">an Angel</span> mild:
+          <br>Witless woe was ne’er beguiled!</div>
+
+        
+        <img src="bottom_left_cloud.png" id="bottom_left_cloud">
+        <img src="top_left_cloud.png" id="top_left_cloud">
+        <img src="bottom_right_cloud.png" id="bottom_right_cloud">
+        <img src="top_right_cloud.png" id="top_right_cloud">
+        <img src="center_cloud.png" id="center_cloud">
+        <img src="center_cloud.png" id="center_cloud_2">
+        <img src="crowd.png" id="crowd">
+        <img src="right_hand.png" id="right_hand">
+        <img src="left_hand.png" id="left_hand">
+        <img src="feather_2.png" id="feather_2">
+        <img src="feather_1.png" id="feather_1">
+        <img src="feather_2.png" id="feather_2_2">
+        <img src="feather_1.png" id="feather_1_2">
+        <img src="center_feather.png" id="feather_center">
+        
+      </div>
+    </div>
+
+    <!--stanza 2_1 -->
+    <div class="s2_1_container">
+      <div class="frame_s2_1">
+        <div id="stanza_2">And I <span class="font2">wept</span> both night and day,
+          <br>And he wiped <span class="font2">my tears</span> away;</div>
+        <img src="s2_1_background.png" id="s2_1_background">
+        <img src="blue_area_s2_2.png" id="s2_1_blue_area">
+        <img src="character.png" id="character">
+        <img src="tear.png" id="tear">
+        <img src="angel_hand.png" id="hand_s2_1">
+        <img src="cover_flowers.png" id="s2_1_flower">
+        <img src="flower_2.png" id="s2_1_flower_2">
+
+        <a href="#targetSection">
+          <img src="s2_2_left_background.png" id="main_left_background" alt="Left Background">
+          <img src="s2_2_left_background.png" id="glow_left_background" alt="Left Background">
+        </a>
+        <audio id="sound_crying"><source src="cry-103743.wav" type="audio/mpeg" preload="auto"></audio>
+
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+           var girl = document.getElementById('tear');
+           var hoverGirl = document.getElementById('sound_crying');
+
+           girl.addEventListener('mouseover', function () {
+               hoverGirl.play();
+           });
+
+           girl.addEventListener('mouseleave', function () {
+               hoverGirl.pause();
+               hoverGirl.currentTime = 0;
+           });
+       });
+ </script>
+    <!--stanza 2_2 -->
+    <div class="s2_2_container" >
+      <div class="frame_s2_2" id="targetSection">
+        <div id="stanza_s2_2">And I wept both day and night,<br>
+          And <span class="font2">hid </span>from
+          him <span class="font2">my heart’s delight</span>.</div>
+          <img src="top_cloud_s2_2.png" id="top_s2_2">
+          <img src="pesdestal.png" id="pesdestal">
+          <img src="window.png" id="window">
+          <img src="heart.png" id="heart_1">
+          <img src="glass_lid.png" id="glass_lid">
+          <audio id="sound_lid"><source src="ice-6-104133.wav" type="audio/mpeg" preload="auto"></audio>
+          <div class="brokenframe"></div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var lid = document.getElementById('glass_lid');
+          var hoverLid = document.getElementById('sound_lid');
+      
+          lid.addEventListener('mouseover', function () {
+              hoverLid.play();
+          });
+      
+          lid.addEventListener('mouseenter', function() {
+              hoverLid.volume = 0.3; // Set to lower volume on hover
+          });
+      
+          lid.addEventListener('mouseleave', function () {
+              hoverLid.pause();
+              hoverLid.currentTime = 0;
+          });
+      });
+      </script>
+
+    <!--stanza 3_1 -->
+    <div class="s3_1_container">
+      <div class="frame_s3_1" id="frames_3">
+        <div id="stanza_s3_1">So he took his wings, and <span class="font2">fled</span>;<br>
+          Then <span class="font2">the morn </span>blushed rosy red.</div>
+          <img src="top_cloud_s3_1.png" id="top_blue_cloud">
+          <img src="sunlight.png" id="sunlight">
+          <img src="forest.png" id="forest">
+          <img src="feather_2.png" id="feather_s3_1">
+      </div>
+    </div>
+
+    <script>  /*for hover_end transition sunlight*/
+      document.addEventListener('DOMContentLoaded', function() {
+          const frame = document.getElementById('frames_3');
+          const sunlight = document.getElementById('sunlight');
+
+          /*add a layer sunlight_visible to end the transition, not repeat*/
+          frame.addEventListener('mouseenter', function() {
+                sunlight.style.opacity = '1';
+                sunlight.style.clipPath = 'inset(0 0 0 0)';
+                
+          });
+      });
+  </script>
+
+    <!--stanza 3_2 -->
+    <div class="s3_2_container">
+      <div class="frame_s3_2">
+        <div id="stanza_s3_2">I <span class="font1">dried</span> my tears, 
+          and <span class="font1">armed</span> my fears <br>
+          With ten thousand <span class="font1">shields and spears</span>.</div>
+          <img src="top_s3_2.png" id="top_tree_cloud">
+          <img src="shields.png" id="shield_combined"> 
+          <img src="spear.png" id="spear_1">
+          <img src="spear.png" id="spear_2">
+          <img src="cursor.png" id="symbol_1">
+          <img src="cursor.png" id="symbol_2">
+       <audio id="hoverSound_shields"><source src="draw-sword1-44724.mp3" type="audio/mpeg" preload="auto"></audio>
+
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var shield = document.getElementById('shield_combined');
+          var hoversound = document.getElementById('hoverSound_shields');
+  
+          shield.addEventListener('mouseover', function () {
+              hoversound.play();
+          });
+
+          shield.addEventListener('mouseenter', function() {
+              hoversound.volume = 0.3; // Set to lower volume on hover
+          });
+
+          shield.addEventListener('mouseleave', function () {
+              hoversound.pause();
+              hoversound.currentTime = 0;
+          });
+      });
+  </script>
+
+    <!--stanza 4_2 -->
+    <div class="s4_2_container">
+      <div class="frame_s4_2">
+        <div id="stanza_s4_1_2">Soon my Angel <span class="font1">came again</span>; <br>
+          I was armed, he came <span id="changed_color"class="font1" 
+          tabindex="0">in vain</span>;</div> <!--make the span focusable.-->
+          <div id="stanza_s4_2">
+          For the <span class="font1">time of youth</span> was fled,
+          <br>And <span class="font1">grey hairs</span> were on my head.
+        </div>
+          <img src="ground.png" id="ground">
+          <img src="cursor.png" id="symbol_3">
+          <img src="cursor.png" id="symbol_4">
+          <img src="cursor.png" id="symbol_5">
+          <img src="" id="s4_flower_1">
+          <img src="sandclock.gif" id="sandclock">
+          <img src="flower_bud.png" id="final_flower_bud">
+          <img src="flower_left.png" id="final_flower_left">
+          <img src="flower_right.png" id="final_flower_right">
+          <audio id="sound_sand"><source src="sandfall5-83468.mp3" type="audio/mpeg" preload="auto"></audio>
+          <div id="circle1"></div>
+          <img src="bush.png" id="bush">
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var sand = document.getElementById('sandclock');
+          var hoverSand = document.getElementById('sound_sand');
+  
+          sand.addEventListener('mouseover', function () {
+            hoverSand.play();
+          });
+          
+          shield.addEventListener('mouseleave', function () {
+            hoverSand.pause();
+            hoverSand.currentTime = 0;
+          });
+      });
+  </script>
+
+    
+    
+  </body>
+  </html>
+  
