@@ -67,11 +67,11 @@ body{
 /*LAYOUTS*/
 .cover_container{
     width: 100vw;
-    height: 1024px;
+    height:100vw;
 }
 .frame_cover{
-    width: 1920px;
-    height: 1024px;
+    width: 100vw;
+    height: 100vw;;
     background-color:var(--primary-bg);
     margin: auto;
     position: relative;
@@ -80,12 +80,12 @@ body{
 }
 .s1_container {
     width: 100vw;
-    height: 1024px;
+    height: 100vw;;
 }
 
 .frame_s1 {
-    width: 1920px;
-    height: 1024px;
+    width: 100vw;;
+    height: 100vw;;
     background-color:var(--primary-bg);
     margin: 0 auto;
     position: relative;
@@ -98,8 +98,8 @@ body{
 }
 
 .frame_s2_1 {
-    width: 1920px;
-    height: 1024px;
+    width: 100vw;;
+    height: 100vw;;
     background-color: var(--primary-bg);
     margin: 0 auto;
     position: relative;
@@ -109,12 +109,12 @@ body{
 
 .s2_2_container {
     width: 100vw;
-    height: 1024px;
+    height: 100vw;;
 }
 
 .frame_s2_2 {
-    width: 1920px;
-    height: 1024px;
+    width: 100vw;;
+    height: 100vw;;
     background-color: var(--secondary-bg);
     margin: 0 auto;
     position: relative;
